@@ -1,0 +1,217 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href="{% static 'about.css' %}">
+</head>
+
+<body>
+    <!-- Navbar section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a id="navbar__logo">Erishina Ang CBO</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="about" class="navbar__links">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="goals" class="navbar__links">Goals</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="projects" class="navbar__links">Projects</a>
+                </li>
+                <li class="navbar__btn">
+                    {% if user.is_authenticated %}
+                    <a href="logout" class="button">Logout</a>
+                    {% else %}
+                    <a href="register" class="button">Sign Up</a>
+                    {% endif %}
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <header>
+        <h1>About Us</h1>
+    </header>
+
+    <div class="content">
+        <p>Erishina Ang Community based organization is a Non governmental, political and Non profit Indigenous Organization founded in 2017.
+            <br><br>Its main goal is to socially, economically and politically empower vulnerable women and children in the Maasai Communities.
+            <br><br>High levels of poverty, low income, retrogressive culture,HIV/AIDs among other challenges have left these families vulnerable. It has denied them rights to access basic needs and degrading their value in the society.
+            <br><br>Our main goal is to see a socially and an economically empowered community which will be able to address its needs through appropriate and sustainable interventions.
+            <br><br>Through capacity building we build positive strengths, use untapped resources, skills and knowledge among the community.
+            <br><br>We use a holistic approach to target all groups in the community as we collaborate with relevant development partners to leverage resources and provide quality services.
+        </p>
+    </div>
+
+
+    <h2>Program Structure…</h2>
+    <img id='program' src='images/program.png' width='50%' height='50%'>
+
+    <div class='row'>
+        <div class='column'>
+            <section id='vision'>
+                <h3>Vision and Mission </h3>
+                <p><b>Vision:</b>A Self Reliant and empowered Community that promotes social, economic, cultural and moral development<br><br>
+                    <b>Mission:</b>To empower the disadvantaged women and children in the community through appropriate and sustainable initiatives.</p>
+            </section>
+        </div>
+
+        <div class='column'>
+            <section id='ul'>
+                <ul>
+                    <th>
+                        <h3>Target groups</h3>
+                    </th>
+                    <td>
+                        <li>Vulnerable women and children</li>
+                    </td>
+                    <td>
+                        <li>Women and Youth groups</li>
+                    </td>
+                    <td>
+                        <li>Learning Institutions</li>
+                    </td>
+                    <td>
+                        <li>Faith Based Organization</li>
+                    </td>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <div class='row'>
+            <div class='column' id='left-footer'>
+                <ul id='footerList'>
+                    <td><a id='flist' href='erishina.html'>
+                            <li>Home
+                        </a></li>
+                    </td>
+                    <td><a id='flist' href='about.html'>
+                            <li>About Us
+                        </a></li>
+                    </td>
+                    <td><a id='flist' href='goals.html'>
+                            <li>Goals
+                        </a></li>
+                    </td>
+                    <td><a id='flist' href='projects.html'>
+                            <li>Projects
+                        </a></li>
+                    </td>
+                    <td><a id='flist' href='login.html'>
+                            <li>Login
+                        </a></li>
+                    </td>
+                    <td><a id='flist' href='registration.html'>
+                            <li>Registration
+                        </a></li>
+                    </td>
+                </ul>
+            </div>
+
+            <div class='column' id='mid-footer'>
+                <ul id='footerList'>
+                    <th>
+                        <p id='flist'>
+                            <li><b>Vision</b>
+                        </p>
+                        </li>
+                    </th>
+                    <td>
+                        <p id='vlist'>
+                            <li>A Self Reliant and empowered <br> Community that promotes social,<br> economic, cultural and moral development.
+                        </p>
+                        </li>
+                    </td>
+                    <br>
+                    <th>
+                        <p id='mlistH'>
+                            <li><b>Mission</b>
+                        </p>
+                        </li>
+                    </th>
+                    <td>
+                        <p id='mlist'>
+                            <li>To empower the disadvantaged women <br> and children in the community through <br> appropriate and sustainable initiatives.
+                        </p>
+                        </li>
+                    </td>
+                </ul>
+            </div>
+
+            <div class='column' id='right-footer'>
+                <ul id='footerList'>
+                    <ul id='footerList'>
+                        <th>
+                            <p id='vlist'>
+                                <li><b>Contact Us</b>
+                            </p>
+                            </li>
+                        </th>
+                        <td>
+                            <p id='vlist'>
+                                <li>Address P.O. Box 30197-00100, Nairobi, Kenya
+                            </p>
+                            </li>
+                        </td>
+                        <td>
+                            <p id='vlist'>
+                                <li>Phone: 0722495676
+                            </p>
+                            </li>
+                        </td>
+                    </ul>
+
+                    <div class='media-row'>
+                        <div class='media-column'>
+                            <a id='slist' href='https://www.facebook.com/'>
+                                <img class='thumbnail-top' src='images/fb.png' width='50' height='50'>
+                            </a>
+                        </div>
+
+                        <div class='media-column'>
+                            <a id='slist' href='https://twitter.com/'>
+                                <img class='thumbnail-top' src='images/tw.png' width='50' height='50'>
+                            </a>
+                        </div>
+
+                        <div class='media-column'>
+                            <a id='slist' href='https://instagram.com/'>
+                                <img class='thumbnail-top' src='images/in.png' width='50' height='50'>
+                            </a>
+                        </div>
+
+                        <div class='media-column'>
+                            <a id='slist' href='https://youtube.com/'>
+                                <img class='thumbnail-top' src='images/yt.png' width='50' height='50'>
+                            </a>
+                        </div>
+
+                    </div>
+            </div>
+        </div>
+
+        <hr id='hr'>
+        <p id='footerText'>&copy Erishina Ang Community based organization 2023. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

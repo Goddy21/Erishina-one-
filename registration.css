@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1 {
+    font-weight: bold;
+    color: #800000;
+    font-family: serif;
+}
+
+#username {
+    margin-left: 65px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+form {
+    margin-top: 50px;
+}
+
+#email {
+    margin-left: 85px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#pass {
+    margin-left: 68px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#pass2 {
+    margin-left: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#submit {
+    margin: 5px 10px;
+    padding: 5px 10px;
+    background-color: #800000;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    font-size: 1.0rem;
+
+}
+
+#submit:hover {
+    background: brown;
+    color: white;
+}
+
+#submit:active {
+    background: #967bb6;
+    color: white
+}
+
+body {
+    background-image: url('images/ms23.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+label {
+    color: #800000;
+    font-weight: bold;
+}
+
+.center {
+    background-image: url('images/ms23.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid black;
+    margin-left: 450px;
+    margin-right: 450px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border: 50px;
+    border-radius: 30px;
+}

@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href="{% static 'registration.css' %}">
+    <style>
+        h3{
+            color:red;
+            font-weight:bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='center'>
+        <img id='logo' src='images/log3.png' width='160' height='100'>
+        <h1>Sign-Up below</h1>
+        {% for message in messages %}
+        <h3>{{message}}</h3>
+        {% endfor %}
+        <form action="register" method="POST">
+            {% csrf_token %}
+            <label>Username: </label>
+            <input type='text' name='username' id='username'>
+
+            <br><br><br><br>
+
+            <label>E-mail: </label>
+            <input type='email' name='email' id='email'>
+
+            <br><br><br><br>
+
+            <label>Password: </label>
+            <input type='password' name='password' id='pass'>
+
+            <br><br><br><br>
+
+            <label>Re-enter Password: </label>
+            <input type='password' name='password2' id='pass2'>
+            <br><br><br>
+
+            <input type='submit' id='submit'>
+        </form>
+
+
+    </div>
+</body>
+
+</html>

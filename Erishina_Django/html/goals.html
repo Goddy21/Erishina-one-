@@ -1,0 +1,376 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Goals</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href="{% static 'goals.css' %}">
+</head>
+
+<body>
+    <!-- Navbar section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a id="navbar__logo">Erishina Ang CBO</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="about" class="navbar__links">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="goals" class="navbar__links">Goals</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="projects" class="navbar__links">Projects</a>
+                </li>
+                <li class="navbar__btn">
+                    {% if user.is_authenticated %}
+                    <a href="logout" class="button">Logout</a>
+                    {% else %}
+                    <a href="register" class="button">Sign Up</a>
+                    {% endif %}
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h1>Our main objectives</h1>
+    <h2>Summary of Target groups….</h2>
+    <p id="topP">The Maa community is our main focus
+        <br>These community have deep rooted traditions and culture, both negative and positive
+    </p>
+
+    <ul id='objectives'>
+        <li>The communities structures stand at men dominate and they are the main decision makers in almost everything. Focus our projects on opportunities where men do not have interest in it.
+        </li><br>
+        <li>Their livelihood(Keeping cattle) is a priority, we sensitize them on diversity and other emerging issues.
+        </li><br>
+        <li>Most of them have non- formal education and other challenges so we treat every group individually.
+        </li><br>
+        <li>We focus on using existing resources, skills and knowledge to improve lives of both women and children.
+        </li><br>
+        <li>There are retrogressive culture-we are fighting against,i.e (FGM,Early Marriages) we will keep on fighting against.
+        </li><br>
+        <li>In all our projects we collaborate with development partners and government for leveraging resources, technical and financial support.
+        </li><br>
+        <li>Collaboration and Networking with relevant partners is a cross cutting issue in all our interventions.
+        </li><br>
+    </ul>
+
+
+    <div class='row'>
+        <section id='sec1'>
+            <div class='column'>
+                <h3>1.Capacity Building and Advocacy</h3>
+                <br>
+                <ul class=''>
+                    <th class=''><b>Enhance Access to information. </b></th>
+                    <td class=''>
+                        <li>Access to information through trainings, awareness creation sessions and sensitization.</li>
+                    <td>
+                    <td class=''>
+                        <li>Enhance collaboration from the County government for technical support.</li>
+                    <td>
+                    <td class=''>
+                        <li>General community education on emerging issues.</li>
+                    <td>
+                </ul>
+            </div>
+        </section>
+        <section id='sec2'>
+            <div class='column'>
+                <img id='pic1' src='images/pic1.jpg' width='100%' height='100%'>
+                <img id='pic8' src='images/pic8.jpg' width='300' height='200'>
+            </div>
+        </section>
+    </div>
+
+    <div class='row'>
+        <section id='sec1'>
+            <div class='column'>
+                <h3>2.Education and Technology</h3>
+                <br>
+                <ul>
+                    <td>
+                        <li>Access education and enhance transition, retention and completion(Primary,secondary,tertiary levels)
+                        <li>
+                    </td>
+                    <td>
+                        <li>Support vulnerable children through scholarship programs(Secondary,Vocational trainings for those with lower grades)</li>
+                    <td>
+                    <td>
+                        <li>Established a libraray to enhance learning-(Through community support –old and new books)</li>
+                    <td>
+                    <td>
+                        <li>Mentorship programs in schools-reaching the new generation.</li>
+                    <td>
+                </ul>
+            </div>
+        </section>
+        <section id='sec2'>
+            <div class='column'>
+                <img id='pic1' src='images/pic9.jpg' width='100%' height='100%'>
+            </div>
+        </section>
+    </div>
+
+    <div class='row'>
+        <section class='sec1'>
+            <div class='column'>
+                <h3>3.Environment,Health & Water</h3>
+                <br>
+                <ul>
+                    <th><b>Promote environmental protection, access to good health, clean and safe water.</b></th>
+                    <br><br>
+                    <td>
+                        <li> Access information on how to conserve the environment through promoting tree planting and preserving the existing forests.
+                        <li>
+                    </td>
+                    <td>
+                        <li>Access to information on health, both preventive and curative services(Especially for the vulnerable groups}</li>
+                    <td>
+                    <td>
+                        <li>Access to clean and safe water for drinking at the household levels.</li>
+                    <td>
+                    <td>
+                        <li>Educate the community of different methods of water harvest during the rainny season.</li>
+                    <td>
+                </ul>
+            </div>
+        </section>
+        <section id='sec2'>
+            <div class='column'>
+                <img id='pic4' src='images/pic4.jpg' width='100%' height='100%'>
+                <img id='pic3' src='images/pic3.jpg' width='300' height='200'>
+            </div>
+        </section>
+    </div>
+
+    <div class='row'>
+        <section class='sec1'>
+            <div class='column'>
+                <h3>Entrepreneurship and culture</h3>
+                <br>
+                <ul class=''>
+                    <th><b>To ensure access to entrepreneurship opportunities and promote positive indigenous knowledge for economic and social benefits</b></th>
+                    <td>
+                        <li>Promote access to Economic & Entrepreunship opportunities for Maasai Indigenous groups.
+                        <li>
+                    </td>
+                    <td>
+                        <li>Use the positive existing indigenous culture for entrepreuniship income.</li>
+                    <td>
+                    <td>
+                        <li>Train Indigenous women and other groups on other alternatives of income</li>
+                    <td>
+                    <td>
+                        <li>Improve access and linkages to locals and international markets</li>
+                    <td>
+                </ul>
+            </div>
+        </section>
+
+        <div class='column'>
+            <img id='pic5' src='images/pic5.jpg' width='50%' height='50%'>
+            <img id='pic6' src='images/pic6.jpg' width='50%' height='50%'>
+        </div>
+
+        <div class='column'>
+            <img id='pic7' src='images/pic7.jpg' width='100%' height='100%'>
+        </div>
+    </div>
+
+    <h2>Our expectations</h2>
+    <ul id='expectations'>
+        <li>Access relevant information through awareness creation, sensitization and education.</li>
+        <li>Enhanced skills and knowledge within the community</li>
+        <li>Encourage community participation in all the project stages.</li>
+        <li>Change of attitude towards among beneficiaries and behavioral changed in projects impact.</li>
+        <li>Encourage community participation in all the project stage</li>
+        <li>Enhanced community ownership for management and sustainability.</li>
+    </ul>
+
+    <table class='table'>
+        <th>Component</th>
+        <th>Area Kajiado</th>
+        <th>Activity done</th>
+        <th>Number reached</th>
+        <th>Patnership support</th>
+        <th>Amount of water step organization</th>
+
+        <tr>
+            <td>capacity building</td>
+            <td>Central-Ildamat</td>
+            <td>Training on clean and safe water<br>Provision of a bleach maker</td>
+            <td>22(3M,19F)</td>
+            <td>Water Step International Organization.
+                <br>-Ministry Of Health(Public Health Department)
+                <br>-Community Volunteers
+                <br>Erishina Ang CBO</td>
+            <td>Ksh.25,000/</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>East-Isinya</td>
+            <td>Training on clean and safe water<br>Provision of a bleach maker</td>
+            <td>25(9M,16F</td>
+            <td>Water Step International Organization.
+                <br>-Ministry Of Health(Public Health Department)
+                <br>Erishina Ang CBO</td>
+            <td>Ksh.25,000/</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>Central –Mile Tisa</td>
+            <td>Training on clean and safe water<br>Provision of a bleach maker</td>
+            <td>26(11M,15F)</td>
+            <td>Water Step International Organization.
+                <br>-Ministry Of Health(Public Health Department)
+                <br>-Community Volunteers
+                <br>Erishina Ang CBO</td>
+            <td>Ksh.25,000/</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>West -Kilonito</td>
+            <td>Provision of water balls to accessibility</td>
+            <td>19 Households </td>
+            <td>Water Step International Organization.
+                <br>-Community Volunteers
+                <br>Erishina Ang CBO</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <footer>
+        <div class='row'>
+            <div class='column' id='left-footer'>
+                <ul id='footerList'>
+                    <td><a id='flist' href='erishina.html'>
+                            <li>Home
+                        </a></li>
+                    </td>
+                    <td><a id='flist' href='about.html'>
+                            <li>About Us
+                        </a></li>
+                    </td>
+                    <td><a id='flist' href='goals.html'>
+                            <li>Goals
+                        </a></li>
+                    </td>
+                    <td><a id='flist' href='projects.html'>
+                            <li>Projects
+                        </a></li>
+                    </td>
+                    <td><a id='flist' href='login.html'>
+                            <li>Login
+                        </a></li>
+                    </td>
+                    <td><a id='flist' href='registration.html'>
+                            <li>Registration
+                        </a></li>
+                    </td>
+                </ul>
+            </div>
+
+            <div class='column' id='mid-footer'>
+                <ul id='footerList'>
+                    <th>
+                        <p id='flist'>
+                            <li><b>Vision</b>
+                        </p>
+                        </li>
+                    </th>
+                    <td>
+                        <p id='flist'>
+                            <li>A Self Reliant and empowered <br> Community that promotes social,<br> economic, cultural and moral development.
+                        </p>
+                        </li>
+                    </td>
+                    <br>
+                    <th>
+                        <p id='flist'>
+                            <li><b>Mission</b>
+                        </p>
+                        </li>
+                    </th>
+                    <td>
+                        <p id='flist'>
+                            <li>To empower the disadvantaged women <br> and children in the community through <br> appropriate and sustainable initiatives.
+                        </p>
+                        </li>
+                    </td>
+                </ul>
+            </div>
+
+            <div class='column' id='right-footer'>
+                <ul id='footerList'>
+                    <th>
+                        <p id='flist'>
+                            <li><b>Contact Us</b>
+                        </p>
+                        </li>
+                    </th>
+                    <td>
+                        <p id='flist'>
+                            <li>Address P.O. Box 30197-00100, Nairobi, Kenya
+                        </p>
+                        </li>
+                    </td>
+                    <td>
+                        <p id='flist'>
+                            <li>Phone: 0722495676
+                        </p>
+                        </li>
+                    </td>
+                </ul>
+
+                <div class='media-row'>
+                    <div class='media-column'>
+                        <a href='https://www.facebook.com/'>
+                            <img class='thumbnail-top' src='images/fb.png' width='50' height='50'>
+                        </a>
+                    </div>
+
+                    <div class='media-column'>
+                        <a href='https://twitter.com/'>
+                            <img class='thumbnail-top' src='images/tw.png' width='50' height='50'>
+                        </a>
+                    </div>
+
+                    <div class='media-column'>
+                        <a href='https://instagram.com/'>
+                            <img class='thumbnail-top' src='images/in.png' width='50' height='50'>
+                        </a>
+                    </div>
+
+                    <div class='media-column'>
+                        <a href='https://youtube.com/'>
+                            <img class='thumbnail-top' src='images/yt.png' width='50' height='50'>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <hr id='hr'>
+        <p id='footerText'>&copy Erishina Ang Community based organization 2023. All rights reserved.</p>
+    </footer>
+    <script src="js/goals.js"></script>
+</body>
+
+</html>

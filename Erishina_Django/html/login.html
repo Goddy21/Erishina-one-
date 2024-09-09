@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>login</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href="{% static 'login.css' %}">
+    <style>
+        h3{
+            color:red;
+            font-weight:bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='center'>
+        <img id='logo' src='log3.png' width='160' height='100'>
+        <h1>Login</h1>
+        {% for message in messages %}
+        <h3>{{message}}</h3>
+        {% endfor %}
+        <form action="login" method="POST">
+            {% csrf_token %}
+            <label>Username: </label>
+            <input type='text' name='username'>
+
+            <br><br><br>
+
+            <label>Password: </label>
+            <input type='password' name='password'>
+
+            <br><br><br>
+
+            <input type='submit' id='submit'>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

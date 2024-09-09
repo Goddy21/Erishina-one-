@@ -1,0 +1,253 @@
+{% load static %}
+<!DOCTYPE html>
+ <html>
+
+ <head>
+     <title>Projects</title>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel='stylesheet' type='text/css' href="{% static 'projects.css' %}">
+ </head>
+
+ <body>
+     <!-- Navbar section -->
+     <nav class="navbar">
+         <div class="navbar__container">
+             <a id="navbar__logo">Erishina Ang CBO</a>
+             <div class="navbar__toggle" id="mobile-menu">
+                 <span class="bar"></span>
+                 <span class="bar"></span>
+                 <span class="bar"></span>
+                 <span class="bar"></span>
+             </div>
+             <ul class="navbar__menu">
+                 <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="about" class="navbar__links">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="goals" class="navbar__links">Goals</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="projects" class="navbar__links">Projects</a>
+                </li>
+                 <li class="navbar__btn">
+                    {% if user.is_authenticated %}
+                    <a href="logout" class="button">Logout</a>
+                    {% else %}
+                    <a href="register" class="button">Sign Up</a>
+                    {% endif %}
+                </li>
+             </ul>
+         </div>
+     </nav>
+     <h1>On going projects(Initial stages…..</h1>
+
+     <table id='table'>
+         <th>Bee Keeping and Indigenous Knowledge Documentation</th>
+         <tr>
+             <td>Kajiado East(Oloshaiki Village)
+                 <br><br>One group
+                 <br><br>20 members
+             </td>
+
+             <td>Kajaido West (Kilonito)
+                 <br><br>Two groups
+                 <br><br>20 members each
+             </td>
+
+             <td>Kajiado Central
+                 <br><br>Ildamat (One group-25 members
+                 <br><br>Matapato South-37 members
+             </td>
+         </tr>
+     </table>
+
+     <h2>Gaps and Opportunities…</h2>
+     <div class='gap-row'>
+         <div class='gap-column'>
+             <ul>
+                 <th>
+                     <h3>GAPS</h3>
+                 <th>
+                     <br>
+                 <td>
+                     <li>Organizational Capacity</li>
+                 <td>
+                     <br>
+                 <td>
+                     <li>Financial support limits programs</li>
+                 <td>
+                     <br>
+                 <td>
+                     <li>Geographical nature---vast areas.</li>
+                 <td>
+                     <br>
+                 <td>
+                     <li>The groups we work with are not normally sustained, they break we don’t realize impact.</li>
+                 <td>
+                     <br>
+                 <td>
+                     <li>General lack of information of the most benefits(County government benefits)</li>
+                 <td>
+                     <br>
+             </ul>
+         </div>
+
+         <div class='gap-column'>
+             <ul>
+                 <th>
+                     <h3>Opportunities</h3>
+                 <th>
+                     <br>
+                 <td>
+                     <li>An office a place to operate from</li>
+                 <td>
+                     <br>
+                 <td>
+                     <li>Willing volunteers at the community level.</li>
+                 <td>
+                     <br>
+                 <td>
+                     <li>Resource mobilization for both organization and groups.</li>
+                 <td>
+                     <br>
+                 <td>
+                     <li>Focus on registration of groups associations to ensure sustainability.</li>
+                 <td>
+                     <br>
+                 <td>
+                     <li>Enhance community education and sensitization among the groups.</li>
+                 <td>
+                     <br>
+                 <td>
+                     <li>Avenues to leverage resources(County government resources)</li>
+                 <td>
+                     <br>
+             </ul>
+         </div>
+     </div>
+
+     <footer>
+         <div class='row'>
+             <div class='column' id='left-footer'>
+                 <ul id='footerList'>
+                     <td><a id='flist' href='erishina.html'>
+                             <li>Home
+                         </a></li>
+                     </td>
+                     <td><a id='flist' href='about.html'>
+                             <li>About Us
+                         </a></li>
+                     </td>
+                     <td><a id='flist' href='goals.html'>
+                             <li>Goals
+                         </a></li>
+                     </td>
+                     <td><a id='flist' href='projects.html'>
+                             <li>Projects
+                         </a></li>
+                     </td>
+                     <td><a id='flist' href='login.html'>
+                             <li>Login
+                         </a></li>
+                     </td>
+                     <td><a id='flist' href='registration.html'>
+                             <li>Registration
+                         </a></li>
+                     </td>
+                 </ul>
+             </div>
+
+             <div class='column' id='mid-footer'>
+                 <ul id='footerList'>
+                     <th>
+                         <p id='flist'>
+                             <li><b>Vision</b>
+                         </p>
+                         </li>
+                     </th>
+                     <td>
+                         <p id='vlist'>
+                             <li>A Self Reliant and empowered <br> Community that promotes social,<br> economic, cultural and moral development.
+                         </p>
+                         </li>
+                     </td>
+                     <br>
+                     <th>
+                         <p id='mlistH'>
+                             <li><b>Mission</b>
+                         </p>
+                         </li>
+                     </th>
+                     <td>
+                         <p id='mlist'>
+                             <li>To empower the disadvantaged women <br> and children in the community through <br> appropriate and sustainable initiatives.
+                         </p>
+                         </li>
+                     </td>
+                 </ul>
+             </div>
+
+             <div class='column' id='right-footer'>
+                 <ul id='footerList'>
+                     <ul id='footerList'>
+                         <th>
+                             <p id='vlist'>
+                                 <li><b>Contact Us</b>
+                             </p>
+                             </li>
+                         </th>
+                         <td>
+                             <p id='vlist'>
+                                 <li>Address P.O. Box 30197-00100, Nairobi, Kenya
+                             </p>
+                             </li>
+                         </td>
+                         <td>
+                             <p id='vlist'>
+                                 <li>Phone: 0722495676
+                             </p>
+                             </li>
+                         </td>
+                     </ul>
+
+                     <div class='row'>
+                         <div class='column'>
+                             <a id='slist' href='https://www.facebook.com/'>
+                                 <img class='thumbnail-top' src='images/fb.png' width='50' height='50'>
+                             </a>
+                         </div>
+
+                         <div class='column'>
+                             <a id='slist' href='https://twitter.com/'>
+                                 <img class='thumbnail-top' src='images/tw.png' width='50' height='50'>
+                             </a>
+                         </div>
+
+                         <div class='column'>
+                             <a id='slist' href='https://instagram.com/'>
+                                 <img class='thumbnail-top' src='images/in.png' width='50' height='50'>
+                             </a>
+                         </div>
+
+                         <div class='column'>
+                             <a id='slist' href='https://youtube.com/'>
+                                 <img class='thumbnail-top' src='images/yt.png' width='50' height='50'>
+                             </a>
+                         </div>
+
+                     </div>
+             </div>
+         </div>
+
+         <hr id='hr'>
+         <p id='footerText'>&copy Erishina Ang Community based organization 2023. All rights reserved.</p>
+     </footer>
+     <script src="js/projects.js"></script>
+ </body>
+
+ </html>
